@@ -1,0 +1,513 @@
+/* Macro class */
+
+* {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  color: #bab9b9;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #040a0f;
+}
+
+header {
+  position: relative;
+}
+
+h1 {
+  font-family: "Jomolhari", serif;
+  font-size: 60px;
+  color: #fbfbfb;
+}
+
+h2 {
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: #bab9b9;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: #bab9b9;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Jomolhari", serif;
+  font-size: 28px;
+  color: #fbfbfb;
+}
+
+h4 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #bab9b9;
+}
+
+h5 {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #fbfbfb;
+}
+
+h6 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #bab9b9;
+}
+
+p {
+  font-family: "poppins", sans-serif;
+  font-size: 12px;
+}
+
+a {
+  cursor: pointer;
+  transition: ease-in-out 500ms;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #f59950;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fbfbfb;
+  border: transparent;
+  cursor: pointer;
+  transition: ease-in-out 310ms;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+/* --------------- */
+
+/* My components */
+.mycontain {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Nav Bar */
+
+.navbar {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #bab9b91e;
+  border-radius: 1px;
+}
+
+.logo {
+  height: 100px;
+  padding: 10px;
+}
+
+.nav-link {
+  display: inline;
+  padding: 25px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #bab9b9;
+}
+
+.nav-link:hover {
+  color: #fbfbfb;
+}
+
+.floating {
+  float: right;
+}
+
+.lowercase {
+  text-transform: none;
+}
+
+/* End Nav Bar */
+
+/* ---------------- */
+
+/* Micro Class */
+
+/* Hero section */
+.hero-section {
+  height: 100vh;
+  background-image: linear-gradient(180deg, #040a0f00, #040a0f),
+    url(../img/hero-travel.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Dark box */
+
+.including-wrapper {
+  margin-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.including {
+  display: inline-block;
+  width: 24%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+.bolder {
+  font-weight: 600;
+  color: #fbfbfb;
+  letter-spacing: normal;
+}
+
+.lighter {
+  color: #e0e0e0;
+}
+
+.darker-box {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* End Dark box */
+
+/* Lower text div */
+.lower-div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+}
+
+.lower-textholder {
+  display: inline-block;
+  width: 24%;
+  padding: 30px;
+}
+
+.lower-wrapper {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #bab9b91e;
+}
+
+header .lower-wrapper {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #fbfbfb8f;
+}
+
+/* End hero section */
+
+/* skills section */
+
+section {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.photo-div {
+  display: inline-block;
+  position: relative;
+  height: 350px;
+  width: 20%;
+  padding: 30px;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  border-radius: 2px;
+}
+
+.photo-div:hover {
+  box-shadow: 0px 0px 20px 2px #bab9b95d;
+}
+
+.aboslute-bottom-text {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+}
+
+.aboslute-bottom-text size200 {
+  width: 200px;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+}
+
+/* Images background Skills */
+.architecture {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/architecture.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.landscape {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/landscape.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.astro {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/astro.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.people {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/people.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* End images background skills */
+
+/* Editors Choices */
+.editor-div {
+  display: inline-block;
+  position: relative;
+  height: 350px;
+  width: 45%;
+  padding: 30px;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  border-radius: 2px;
+}
+
+.editor-div:hover {
+  box-shadow: 0px 0px 20px 2px #bab9b95d;
+}
+
+/* Images background Editors  */
+.ph1 {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/photographer-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ph2 {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/photographer-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.separatore {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* End Images background Editors  */
+
+/* Workshops  */
+.days-texth3 {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #bab9b9;
+}
+
+.title-texth4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Images background Workshops  */
+
+.water {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/cave-water.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.field {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/field-trees.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.lake {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/lake-boat.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.golden {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff00 10%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/golden-hour.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Testimonials */
+
+.color {
+  height: 2px;
+  width: 100px;
+  margin: auto;
+  background-color: #fbfbfb8f;
+}
+
+.testimonials {
+  display: inline-block;
+  position: relative;
+  height: 200px;
+  width: 33%;
+  margin-top: 60px;
+}
+
+.contact-section {
+  background-image: linear-gradient(
+      180deg,
+      #040a0f,
+      #4444447a 60%,
+      #ffffff00 60%,
+      #4444447a 60%,
+      #040a0f
+    ),
+    url(../img/silouhette.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c2a-text {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.c2a {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #f59950;
+}
+
+.newcontain {
+  height: 80vh;
+}
+
+.numbers-div {
+  display: inline-block;
+  width: 33%;
+  padding: 20px;
+}
+
+.numbers {
+  margin-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+/* FOOTER */
+
+.sitemap{
+  display: inline-block;
+  width: 15%;
+}
+
+.footer-links {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #bab9b91e;
+  text-align: center;
+}
+
+/* Credits */
+.credits {
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+  text-align: right;
+}
