@@ -16,8 +16,17 @@ body {
 
 header {
   position: relative;
+  padding: 20px;
 }
 
+section{
+  padding: 20px;
+}
+
+footer{
+  padding: 20px;
+}
+/* TEXT style */
 h1 {
   font-family: "Jomolhari", serif;
   font-size: 60px;
@@ -75,6 +84,8 @@ p {
   font-family: "poppins", sans-serif;
   font-size: 12px;
 }
+
+/* END TEXT style */
 
 a {
   cursor: pointer;
@@ -511,3 +522,44 @@ section {
   bottom: 30px;
   text-align: right;
 }
+
+
+
+/* ------JQUERY------ */
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+  /* TEXT style */
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 28px;
+  }
+
+
+
+  /* END TEXT style */
+
+
+
+}
+
+/* ---- END JQUERY ----*/
