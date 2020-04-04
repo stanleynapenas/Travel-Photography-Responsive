@@ -16,30 +16,26 @@ body {
 
 header {
   position: relative;
-  padding: 20px;
 }
 
-section{
-  padding: 20px;
+section {
+  padding-top: 100px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-footer{
-  padding: 20px;
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
 }
-/* TEXT style */
+
+/* TEXT Style */
+
 h1 {
   font-family: "Jomolhari", serif;
   font-size: 60px;
   color: #fbfbfb;
-}
-
-h2 {
-  font-family: "Rajdhani", sans-serif;
-  letter-spacing: 2px;
-  font-size: 24px;
-  color: #bab9b9;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -85,7 +81,11 @@ p {
   font-size: 12px;
 }
 
-/* END TEXT style */
+.p-width300 {
+  max-width: 300px;
+}
+
+/* END TEXT Style */
 
 a {
   cursor: pointer;
@@ -155,6 +155,98 @@ button:hover {
   text-transform: none;
 }
 
+/* NEW NAV BAR */
+
+
+.nav {
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.nav-icon{
+  height: 30px;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
 /* End Nav Bar */
 
 /* ---------------- */
@@ -168,6 +260,7 @@ button:hover {
     url(../img/hero-travel.jpg);
   background-position: center;
   background-size: cover;
+  padding: 20px;
 }
 
 .center {
@@ -213,8 +306,8 @@ button:hover {
 /* Lower text div */
 .lower-div {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 20px;
+  right: 20px;
   bottom: 5%;
 }
 
@@ -230,18 +323,12 @@ button:hover {
 }
 
 header .lower-wrapper {
-  padding-bottom: 30px;
   border-bottom: 2px solid #fbfbfb8f;
 }
 
 /* End hero section */
 
 /* skills section */
-
-section {
-  padding-top: 100px;
-  text-align: center;
-}
 
 .photo-div {
   display: inline-block;
@@ -267,7 +354,7 @@ section {
   bottom: 30px;
 }
 
-.aboslute-bottom-text size200 {
+.aboslute-bottom-text .size200 {
   width: 200px;
   position: absolute;
   left: 20px;
@@ -501,10 +588,9 @@ section {
   padding-right: 100px;
 }
 
-
 /* FOOTER */
 
-.sitemap{
+.sitemap {
   display: inline-block;
   width: 15%;
 }
@@ -523,13 +609,15 @@ section {
   text-align: right;
 }
 
+/* -------- JQUERY Tablet ------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* TABLET - Macro class */
+  section {
+    padding-top: 40px;
+  }
 
+  /* TABLET - TEXT Style */
 
-/* ------JQUERY------ */
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-
-  /* TEXT style */
   h1 {
     font-size: 48px;
   }
@@ -538,8 +626,113 @@ section {
     font-size: 18px;
   }
 
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 28px;
+    color: #fbfbfb;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  /* P remains the same */
+
+  /* TABLET - HERO Section */
+  .including-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .including {
+    padding: 15px;
+  }
+
+  /* TABLET - Skills  */
+
+  .photo-div {
+    height: 200px;
+    margin-top: 30px;
+    width: 45%;
+  }
+
+  /* TABLET - Workshop section */
+  .title-texth4 {
+    margin-top: 10px;
+  }
+
+  /* TABLET - Testimonials , Call to action */
+  .c2a-text {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .c2a {
+    font-size: 14px;
+  }
+
+  .numbers-div {
+    width: 32%;
+    padding: 15px;
+  }
+
+  .numbers {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /* TABLET - Footer */
+
+  .sitemap {
+    width: 18%;
+  }
+
+  .footer-links {
+    padding-bottom: 20px;
+  }
+}
+
+/* -------- JQUERY Landscape ------- */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* LANDSCAPE - Macro class */
+  section {
+    padding-top: 40px;
+  }
+
+  /* Nav Bar */
+
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .nav-link {
+    padding: 5px;
+  }
+
+  /* End Nav Bar */
+
+  /* LANDSCAPE - TEXT Style */
+
+  h1 {
+    font-size: 36px;
+  }
+
   h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   h3 {
@@ -551,15 +744,144 @@ section {
   }
 
   h5 {
-    font-size: 28px;
+    font-size: 24px;
+    color: #fbfbfb;
   }
 
+  h6 {
+    font-size: 12px;
+  }
+
+  /* P remains the same */
+
+  .hero-section {
+    height: auto;
+  }
+
+  .center {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+  }
+
+  /* Lower text div */
+  .lower-div {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .lower-textholder {
+    width: 49%;
+    padding: 20px;
+  }
+
+  /* LANDSCAPE - Skills  */
+
+  .photo-div {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  /* LANDSCAPE Editors Choices */
+  .editor-div {
+    height: 300px;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  /* LANDSCAPE - Testimonials */
+
+  .color {
+    width: 8 0px;
+  }
+
+  .testimonials {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .c2a-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .c2a {
+    font-size: 14px;
+  }
+
+  .newcontain {
+    height: auto;
+  }
+
+  .testimonials:last-child {
+    margin-bottom: 200px;
+  }
+
+  .numbers-div {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .numbers {
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* LANDSCAPE - FOOTER */
+
+  .sitemap {
+    width: 25%;
+  }
+}
 
 
-  /* END TEXT style */
+/* -------- JQUERY Mobile ------- */
+@media screen and (max-width: 479px) {
+
+/* LANDSCAPE - Macro class */
+.floating {
+  float: none;
+  display: inline-block;
+}
 
 
+/* End Nav Bar */
+
+/* LANDSCAPE - TEXT Style */
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 24px;
+  color: #fbfbfb;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/* P remains the same */
 
 }
 
-/* ---- END JQUERY ----*/
