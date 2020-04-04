@@ -124,31 +124,9 @@ button:hover {
 
 /* Nav Bar */
 
-.navbar {
-  margin-bottom: 50px;
-  border-bottom: 2px solid #bab9b91e;
-  border-radius: 1px;
-}
-
 .logo {
   height: 100px;
   padding: 10px;
-}
-
-.nav-link {
-  display: inline;
-  padding: 25px;
-  margin-top: 15px;
-  text-decoration: none;
-  color: #bab9b9;
-}
-
-.nav-link:hover {
-  color: #fbfbfb;
-}
-
-.floating {
-  float: right;
 }
 
 .lowercase {
@@ -157,8 +135,9 @@ button:hover {
 
 /* NEW NAV BAR */
 
-
 .nav {
+  border-bottom: 2px solid #bab9b91e;
+  margin-bottom: 60px;
 }
 
 .nav > .nav-header {
@@ -197,11 +176,11 @@ button:hover {
   display: none;
 }
 
-.nav-icon{
+.nav-icon {
   height: 30px;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -214,9 +193,7 @@ button:hover {
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
@@ -227,12 +204,13 @@ button:hover {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: #040a0f;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
     left: 0px;
+    text-align: center;
   }
   .nav > .nav-links > a {
     display: block;
@@ -242,8 +220,10 @@ button:hover {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
+    padding-top: 30px;
     height: calc(100vh - 50px);
     overflow-y: auto;
+    z-index: 99;
   }
 }
 
@@ -593,6 +573,7 @@ header .lower-wrapper {
 .sitemap {
   display: inline-block;
   width: 15%;
+  text-decoration: none;
 }
 
 .footer-links {
@@ -610,7 +591,7 @@ header .lower-wrapper {
 }
 
 /* -------- JQUERY Tablet ------- */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   /* TABLET - Macro class */
   section {
     padding-top: 40px;
@@ -636,7 +617,6 @@ header .lower-wrapper {
 
   h5 {
     font-size: 28px;
-    color: #fbfbfb;
   }
 
   h6 {
@@ -698,12 +678,13 @@ header .lower-wrapper {
   }
 
   .footer-links {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
   }
 }
 
 /* -------- JQUERY Landscape ------- */
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   /* LANDSCAPE - Macro class */
   section {
     padding-top: 40px;
@@ -720,7 +701,7 @@ header .lower-wrapper {
   }
 
   .nav-link {
-    padding: 5px;
+    padding: px;
   }
 
   /* End Nav Bar */
@@ -728,7 +709,7 @@ header .lower-wrapper {
   /* LANDSCAPE - TEXT Style */
 
   h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   h2 {
@@ -745,7 +726,6 @@ header .lower-wrapper {
 
   h5 {
     font-size: 24px;
-    color: #fbfbfb;
   }
 
   h6 {
@@ -841,47 +821,53 @@ header .lower-wrapper {
   }
 }
 
-
 /* -------- JQUERY Mobile ------- */
 @media screen and (max-width: 479px) {
+  /* LANDSCAPE - Macro class */
+  .floating {
+    float: none;
+    display: inline-block;
+  }
 
-/* LANDSCAPE - Macro class */
-.floating {
-  float: none;
-  display: inline-block;
+  /* End Nav Bar */
+
+  /* LANDSCAPE - TEXT Style */
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  /* MOBILE - Hero */
+
+  .including {
+    width: 48%;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+  }
+
+  /* MOBILE - Credits */
+  .credits {
+    max-width: 200px;
+  }
 }
-
-
-/* End Nav Bar */
-
-/* LANDSCAPE - TEXT Style */
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 16px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 14px;
-}
-
-h5 {
-  font-size: 24px;
-  color: #fbfbfb;
-}
-
-h6 {
-  font-size: 12px;
-}
-
-/* P remains the same */
-
-}
-
